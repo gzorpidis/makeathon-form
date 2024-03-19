@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import firebase from 'firebase/app';
+// import firebase from 'firebase/app';
 import 'firebase/firestore';
-import {db} from "./firebase_setup";
-import { collection, getDocs, query, updateDoc, where } from "firebase/firestore";
-import { doc, addDoc } from "firebase/firestore";
+// import {db} from "./firebase_setup";
+// import { collection, getDocs, query, updateDoc, where } from "firebase/firestore";
+// import { doc, addDoc } from "firebase/firestore";
 
 // // Firebase configuration
 // const firebaseConfig = {
@@ -20,14 +20,22 @@ import { doc, addDoc } from "firebase/firestore";
 // const db = firebase.firestore();
 
 const Form = () => {
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [name, setName] = useState('');
-  const [surname, setSurname] = useState('');
-  const [answers, setAnswers] = useState('');
-  const [cv, setCv] = useState(null);
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+    // eslint-disable-next-line
+    const [email, setEmail] = useState('');
+    // eslint-disable-next-line
+    const [phone, setPhone] = useState('');
+    // eslint-disable-next-line
+    const [name, setName] = useState('');
+    // eslint-disable-next-line
+    const [surname, setSurname] = useState('');
+    // eslint-disable-next-line
+    const [answers, setAnswers] = useState('');
+    // eslint-disable-next-line
+    const [cv, setCv] = useState(null);
+    // eslint-disable-next-line
+    const [errorMessage, setErrorMessage] = useState('');
+    // eslint-disable-next-line
+    const [successMessage, setSuccessMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
